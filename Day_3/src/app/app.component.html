@@ -1,0 +1,48 @@
+<div class="container-fluid">
+
+  <div class="row">
+
+    <div class="col-12
+    col-md-12
+    bg-dark
+    d-flex
+    flex-direction-column
+    text-light"
+    style="height: 80px;
+    border-radius: 30px;">
+
+      <div class="col-3
+      align-items-center
+      d-flex"
+      style="height: 100%;
+      font-size: 24px;">
+
+        Contact Form Project
+
+      </div>
+
+      <div class="col-9
+      align-items-center
+      d-flex
+      text-light
+      justify-content-end"
+      style="height: 100%;">
+
+        <input class="btn
+        text-light
+        btn-outline-info
+        ml-4"
+        type="button"
+        *ngFor="let item of linkList"
+        (click)= "linkFun(item.link)" 
+        value="{{ item.title }}">
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <router-outlet></router-outlet>
+
+</div>
