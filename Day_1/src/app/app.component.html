@@ -1,0 +1,52 @@
+<div class="container-fluid">
+
+  <!--   <div class="row">
+
+    <div>
+
+      <a routerLink="/page1">GoToPage1</a>
+    
+    </div>
+    
+    <div>
+    
+      <input type="button" 
+      value="GoToPage2"
+      routerLink="/page2">
+    
+    </div>
+    
+    <div>
+    
+      <input type="button" 
+      value="GoToPage3"
+      routerLink="/page3">
+    
+    </div>
+    
+    <div>
+    
+      <a routerLink="/page4">GoToPage4</a>
+    
+    </div>
+  
+  </div> -->
+
+  <div>
+
+    <!--     <input type="button"
+    (click)="gotoRoute(item.link)"
+    *ngFor="let item of linksList"
+    value="{{item.title}}"> -->
+
+    <button (click)=routerFun(item.link)
+    *ngFor="let item of linkList">{{item.title}}</button>
+
+  </div>  
+
+  <router-outlet></router-outlet>
+
+  </div>
+
+
+
