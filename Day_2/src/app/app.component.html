@@ -1,0 +1,94 @@
+<div class="container-fluid"
+style="display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 20vh">
+
+  <div class="logIn"
+  style="border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px #000;
+  width: 50vw;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+  padding: 5px;">
+
+    <div style="margin-top: 25px;">
+
+      <div style="display: flex;
+      align-items: center;
+      justify-content: center;">
+  
+        <h1>Log In</h1>
+  
+      </div>
+  
+      <div style="margin-top: 10px;
+      margin-left: 35px;"> Email : 
+  
+        <!-- <input type="button" name="" id=""
+        [value]="btnText"
+        (click)="addTask()"/> -->
+  
+      </div>
+  
+      <div style="margin-top: 10px;
+      margin-left: 35px;">
+  
+        <input type="email" name="" id=""
+        [placeholder]="inputEmailText"
+        [formControl]="inputEmailData"/>
+  
+      </div>
+  
+      <div style="margin-top: 10px;
+      margin-left: 35px;"> Password : 
+  
+        <!-- <input type="button" name="" id=""
+        [value]="btnText"
+        (click)="addTask()"/> -->
+  
+      </div>
+  
+      <div style="margin-top: 10px;
+      margin-left: 35px;">
+  
+        <input type="password" name="" id=""
+        [placeholder]="inputPasswordText"
+        [formControl]="inputPasswordData"/>
+  
+      </div>
+  
+      <div style="margin-top: 10px;
+      margin-left: 90px;">
+  
+        <input type="checkbox" name="Rember me" id="">
+          Rember me
+  
+      </div>
+  
+      <div style="margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;">
+  
+        <input type="button" 
+        value="Log In"
+        class="btn
+        bg-info
+        text-light
+        btn-outline-dark">
+  
+      </div>
+  
+      <!-- <div>
+        <div *ngFor="let items of taskList">{{ items }}</div>
+      </div> -->
+
+    </div>
+
+  </div>  
+
+
+</div>
